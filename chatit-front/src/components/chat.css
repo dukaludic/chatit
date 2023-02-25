@@ -1,0 +1,40 @@
+.chat-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #868686;
+    width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.mid-container {
+    height: 400px;
+    background-color: #ededed;
+    display: flex;
+}
+
+.room-users-container {
+    width: 200px;
+}
+
+.messages-container {
+    background-color: #fff;
+    width: 100%;
+}
+
+.input-container {
+    background-color: #ededed;
+    height: 40px;
+    padding: 20px;
+}
+
+.input-container input {
+    width: 90%;
+}
