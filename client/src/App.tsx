@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./components/Login";
 import Chat from "./components/Chat";
+import { io } from "socket.io-client";
 
 function App() {
   return (

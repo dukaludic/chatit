@@ -10,7 +10,6 @@ export default function Login({}: Props) {
   const navigate = useNavigate();
 
   const handleJoin = () => {
-    console.log("handleJoin");
     //@ts-ignore
     context.dispatch({ type: "LOGIN", payload: { name: name, room: room } });
 

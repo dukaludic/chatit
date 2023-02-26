@@ -1,13 +1,18 @@
 import React, { useContext } from "react";
 import "./chat.css";
 import { GlobalContext } from "../state/Context";
+import { io } from "socket.io-client";
 
 type Props = {};
 
 export default function Chat({}: Props) {
   const context = useContext(GlobalContext);
 
-  console.log(context, "context");
+  const socket = io("http://localhost:8080");
+
+  socket.on("connect", () => {
+    console.log("WebSocket connection established!");
+  });
 
   return (
     <div className="chat-container">

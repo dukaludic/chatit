@@ -15,17 +15,14 @@ export const GlobalContext = createContext(initialState);
 
 
 const reducer = (state, action) => {
-    console.log('reducer')
     const currentState = { ...state }
 
     switch (action.type) {
         case 'LOGIN':
-            console.log('LOGIN')
             currentState.user = {
                 name: action.payload.name,
                 room: action.payload.room
             }
-            console.log('LOGIN', currentState)
             return currentState;
 
         case "LOGOUT":
@@ -40,7 +37,6 @@ const reducer = (state, action) => {
 }
 
 export const StateProvider = ({ children }) => {
-    console.log('state provider')
     const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
