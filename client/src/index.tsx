@@ -4,13 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { StateProvider } from "./state/Context";
+import { SocketProvider } from "./state/SocketProvider";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <StateProvider>
+    {/* <SocketProvider> */}
     <App />
+    {/* </SocketProvider> */}
   </StateProvider>
 );
 

@@ -27,6 +27,7 @@
 .messages-container {
     background-color: #fff;
     width: 100%;
+    overflow: scroll;
 }
 
 .input-container {
@@ -37,4 +38,18 @@
 
 .input-container input {
     width: 90%;
+}
+
+.msg-container {
+    background-color: #fafafa;
+    margin: 10px;
+    padding: 10px;
+}
+
+.msg-container h4 {
+    margin: 0;
+}
+
+.msg-container p {
+    font-size: 14px;
 }
